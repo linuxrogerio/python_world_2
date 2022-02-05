@@ -1,19 +1,19 @@
 print('########## Desafio 043 ##########')
 
-peso = float(input('\nInforme o peso de uma pessoa: '))
+peso = float(input('\nInforme o peso de uma pessoa: (KG): '))
 altura = float(input('\nInforme a altura dessa pessoa: '))
 
 imc = peso / (altura ** 2)
 
-print('IMC: {}'.format(imc))
+print('\nO IMC dessa pessoa é: {:.1f}'.format(imc))
 
 if imc < 18.5:
-    print('\nAbaixo do peso.')
-elif imc >= 18.5 and imc  < 25:
-    print('\nPeso Ideal.')
-elif imc >= 25 and imc < 30:
-    print('\nSobrepeso.')
-elif imc >= 30 and imc < 40:
-    print('\nObesidade.')
+    print('\nAbaixo do peso.\n')
+elif  18.5 <= imc  < 25:
+    print('\nPeso Ideal.\n')
+elif 25 <= imc < 30:
+    print('\nSobrepeso.\n')
+elif 30 <= imc < 40:
+    print('\nObesidade.\n')
 elif imc >= 40:
-    print('\nObesidade mórbida.')
+    print('\nObesidade mórbida.\n')
