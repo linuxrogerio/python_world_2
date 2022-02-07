@@ -21,12 +21,13 @@ escolha = int(input('\nEscolha umas das opções acima, digitando o número corr
 escolha_maquina = random.choice(range(1, 3))
 
 
-print('\nJO..')
+print('\nJO')
 sleep(2)
-print('KEN..')
+print('KEN')
 sleep(2)
-print('PO!!')
+print('PO!!!')
 
+print(':-=40')
 print('\nVocê escolheu {}'.format(escolha))
 print('\nA máquina escolheu {}'.format(escolha_maquina))
 
