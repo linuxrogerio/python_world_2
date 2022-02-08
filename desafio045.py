@@ -22,9 +22,9 @@ escolha_maquina = random.choice(range(1, 3))
 
 
 print('\nJO')
-sleep(2)
+sleep(1)
 print('KEN')
-sleep(2)
+sleep(1)
 print('PO!!!')
 
 print(':-=40')
