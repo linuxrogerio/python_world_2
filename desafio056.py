@@ -1,16 +1,18 @@
 print('{:=^40}'.format(' Desafio 056 '))
 
+soma_idade = 0
 velho = 0
 nova = 0
 
-for pessoa in range(1,5):
-    nome = str(input('\nDigite o nome da {}º pessoa: '.format(pessoa)))
-    idade = int(input('\nDigite a idade da {}º pessoa: '.format(pessoa)))
-    sexo = str(input('\nDigite o sexo da {}º pessoa, M para masculino e F para feminino: '.format(pessoa)))
+for pessoas in range(1,5):
+    print('----- {}º PESSOA -----'.format(pessoas))
+    nome = str(input('\nNome: ')).strip()
+    idade = int(input('\nIdade: '))
+    sexo = str(input('\nSexo [M/F]: ')).strip()
     sexo = sexo.upper()
+    soma_idade += idade
     
-    if pessoa == 1:
-        if sexo == M:
-            velho = nome
-        else:
-            nova = nome
+    
+media_idade = soma_idade / 4
+print('A media de idade do grupo é de {} anos.'.format(media_idade))
+  
