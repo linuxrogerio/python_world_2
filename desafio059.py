@@ -19,3 +19,11 @@ while opcao != 5:
         print(f'\nA soma de {valor1} + {valor2} = {valor1 + valor2}')
     elif opcao == 2:
         print(f'\nA multiplicação de {valor1} X {valor2} = {valor1 * valor2}')
+    elif opcao ==3:
+        maior = valor1 if valor1 > valor2 else valor2
+        print(f'\nO maior número digitado foi {maior}.')
+    elif opcao == 4:
+        valor1 = int(input('\nDigite o primeiro valor: '))
+        valor2 = int(input('\nDigite o segundo valor: '))
+print('\nFim do programa!\n')
+        
