@@ -1,3 +1,5 @@
+from time import sleep
+
 print('{:=^40}'.format(' Desafio 059 '))
 
 menu = """
@@ -25,5 +27,11 @@ while opcao != 5:
     elif opcao == 4:
         valor1 = int(input('\nDigite o primeiro valor: '))
         valor2 = int(input('\nDigite o segundo valor: '))
+    elif opcao == 5:
+        print('\nFinalizando...')
+        sleep(3) 
+        
+    else:
+        print('\nOpção inválida!')
 print('\nFim do programa!\n')
         
