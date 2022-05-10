@@ -1,11 +1,21 @@
+#from math import factorial
+#num = int(input('\nInforme um número: '))
+#fat = factorial(num)
+#print(f'O fatorial de {num} é {fat}.')
+
 print('{:=^40}'.format(' Desafio 060 '))
 
 num = int(input('\nInforme um número: '))
-fat = num
-digitado = num
+cont = num
+f = 1
 
-while num > 1:
-    print(num * (num - 1))
-    fat = fat * (num -1)
-    num -= 1
-print(f'\nO fatorial de {digitado} é: {fat}')
+print(f'\nCalculando {num}!   - ', end='')
+
+while cont > 0:
+    print('{} '.format(cont), end='')
+    print(' x ' if cont > 1 else ' = ', end='')
+    f *= cont
+    cont -= 1
+
+
+print(f)
