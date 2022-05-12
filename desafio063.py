@@ -1,16 +1,22 @@
 print('{:=^40}'.format(' Desafio 063 '))
 
 termos = int(input('Quantos termos você quer mostrar? '))
-cont = 0
-fb = 0
+t1 = 0
+t2 = 1
 
+print('~'*40)
+print('\nSequência de Fibonacci.\n')
+print(f'{t1} -> {t2}', end='')
 
-while cont != termos:
-    
-    base =  fb 
-    base += 1
-    result = base + fb
-    fb = result   
+cont = 3
+
+#import pdb;pdb.set_trace() #debugging
+while cont <= termos:
+    t3 = t1 + t2
+    print(f' -> {t3}', end='')
+    t1 = t2
+    t2 = t3
     cont += 1
-    print(f'{result} -> ', end='')
+print(' -> FIM')
+print('~'*30)    
     
