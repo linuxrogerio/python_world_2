@@ -8,8 +8,8 @@ fb = 0
 while cont != termos:
     
     base =  fb 
-    proximo = base + 1
-    result = base + proximo
+    base += 1
+    result = base + fb
     fb = result   
     cont += 1
     print(f'{result} -> ', end='')
