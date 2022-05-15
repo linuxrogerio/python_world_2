@@ -1,9 +1,9 @@
+from pickle import TRUE
 from random import randint
 print('{:=^40}'.format(' Desafio 068 '))
 
-ganhou = 'S'
 
-while ganhou in 'sS': 
+while True: 
     
     #Gerando o número do jogador
     opcao = str(input("\nDigite 'P' para PAR e 'I' para Ímpar: ")).lower().strip()[0]
@@ -19,16 +19,19 @@ while ganhou in 'sS':
     jogada_usuario = int(input('\nDigite a sua jogada: '))
     
     soma = jogada_usuario + jogada_computador
+
     
     if soma % 2 == 0:
         print('\nResultado é par.')
-        
+        saida = 2
     else:
         print('\nResultado é impar.')
+        saida = 1
     
+    if saida == escolha_usuario:
+        print('\nvocê venceu!!! FIM DO PROGRAMA.')
+        break
+    else:
+        print('\nO computador Venceu!! TENTE NOVAMENTE...')
         
-    print(f'\nJogada computador: {jogada_computador}')
-    print(f'\nJogada Jogador: {jogada_usuario}')
-    print(f'\nResultado: {soma}')
-    
-    ganhou = 's'
+
