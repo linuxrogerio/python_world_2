@@ -1,4 +1,3 @@
-from pickle import TRUE
 from random import randint
 print('{:=^40}'.format(' Desafio 068 '))
 
