@@ -7,6 +7,9 @@ times = ("Palmeiras", "Santos", "Vasco da Gama", "Grêmio", "Flamengo",
          "Portuguesa", "Atlético Paranaense", "Vitória")
 
 print('\n', '=-='*15)
+print(f'\nLista de times: {times}')
+
+print('\n', '=-='*15)
 print(f'\nOs 5 primeiro colocadodos são: {times[:5]}')
 
 print('\n', '=-='*15)
@@ -16,4 +19,4 @@ print('\n', '=-='*15)
 print(f'\nOs times em ordem alfabética: {sorted(times)}')
 
 print('\n', '=-='*15)
-print(f'\nO Fluminense está na {times.index("Fluminense")}° posição.')
+print(f'\nO Fluminense está na {times.index("Fluminense")+1}° posição.')
