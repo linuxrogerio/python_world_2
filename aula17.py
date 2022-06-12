@@ -14,9 +14,6 @@
 #print(num)
 #print(f'\nEssa lista tem {len(num)} elementos.')
 
-from re import A
-
-
 valores = []
 #valores.append(5)
 #valores.append(9)
