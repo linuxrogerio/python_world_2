@@ -1,4 +1,4 @@
-print('{:=^40}'.format(' Desafio 077 '))
+print('{:=^40}'.format(' Desafio 078 '))
 
 #Faca um programa que leia 5 valores numericos e gurde em uma lista
 #No final, mostre qual foi o maior e o menor valor digitado.
