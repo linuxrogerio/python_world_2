@@ -1,9 +1,10 @@
-def area(l, c):
-    tamanho = l * c
-    print(f'O tamanho do terreno é: {tamanho}m2')
+def area(largura, comprimento):
+    area = largura * comprimento
+    print(f'\nA área de um terreno de {largura}X{comprimento}  é: {area}m2\n')
 
 #Main app
 print('\n---- CONTROLE DE TERRENOS ----\n')
+print('-' * 20)
 l = float(input('LARGURA (m): '))
 c = float(input('COMPRIMENTO (m): '))
 
