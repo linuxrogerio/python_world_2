@@ -5,12 +5,23 @@ def notas(*n, sit=False):
     :param sit: valor opcional, indicando se deve ou não adicionar a situação. 
     :return: dicionário com várias informações sobre a situação da turma.
     """
-    total = 0
-    for i in range(0, len(n)):
-        total += n[i]
-        print(n[i])
-    media = total / len(n)
-    return media
+    r = dict()
+    r['total'] = len(n)
+    r['maior'] = max(n)
+    r['menor'] = min(n)
+    r['media'] = sum(n) / len(n)
+    
+    if sit:
+        if r['media'] >= 7:
+            r['situacao'] = 'BOA'
+        elif r['media'] >= 5:
+            r['situacao'] = 'RAZOAVEL!'
+        else:
+            r['situacao'] = 'RUIM'
+    return r
 
-resp = notas(5.5, 9.5, 6.5)
-print(resp)
+
+#Main App
+resp = notas(4, 1, 5.5, 5.5, 6.5, sit=True)
+#print(resp)
+help(notas)
