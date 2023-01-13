@@ -1,0 +1,5 @@
+Reis;37
+Ana;22
+Pedro;29
+Paulo;50
+José;28
