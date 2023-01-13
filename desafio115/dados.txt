@@ -1,5 +1,3 @@
+José;35
 Reis;37
-Ana;22
-Pedro;29
-Paulo;50
-JosÃ©;28
+Maria;85
